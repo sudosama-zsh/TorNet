@@ -6,8 +6,8 @@ Become a ghost — New IP every 60 seconds.
 ### 1. Install Tor and ProxyChains
 
 ```bash
-sudo apt update
-sudo apt install tor proxychains
+sudo apt install tor
+sudo apt install proxychains
 ```
 2. Generate a Tor control password hash
 
