@@ -50,14 +50,19 @@ Open the Python script (tornet.py) and on line 40, replace the password:
 ```yaml
 controller.authenticate(password='your_original_password')  # <-- your original (non-hashed) password
 ```
-### 6. Restart Tor and Run the Script
+### 6. Installation of requirements.txt
+```bash
+pip3 install -r requirements.txt
+```
+### 7. Restart Tor and Run the Script
 ```bash
 sudo systemctl restart tor
 python3 tornet.py
 ```
-You should see the banner and your new Tor IP.
+
 ![TorNet](tornet.png)
-If you reboot your system, remember to start the Tor service again: 
+
+If you reboot your system, remember to start the Tor service again:
 ```bash
 sudo systemctl start tor
 ```
@@ -65,3 +70,6 @@ To stop it manually:
 ```bash
 sudo systemctl stop tor
 ```
+
+### Note
+If you are having trouble seeing your IP address in the terminal, open the tornet.py file and replace the source I used to query the IP address on line 26 with one of the backup sites I added as a comment below, and continue using it. Even if you are having trouble in the terminal, your IP address will continue to change in the background.
