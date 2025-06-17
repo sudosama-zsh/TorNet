@@ -12,7 +12,7 @@ import pyfiglet
 def show_banner():
     ascii_banner = pyfiglet.figlet_format("TorNet")
     print(Fore.RED + ascii_banner + Style.RESET_ALL)
-    print(Fore.CYAN + "created by sudosama-zsh | may you stay anonymous\n" + Style.RESET_ALL)
+    print(Fore.CYAN + "created by sudosama-cc | may you stay anonymous\n" + Style.RESET_ALL)
 
 # =============================
 # 🌐 IP Display Function
